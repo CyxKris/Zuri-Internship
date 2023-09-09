@@ -9,28 +9,21 @@
 main {
     width: 100%;
     min-height: 100vh;
-    /* background-color: #4834d4;
-    background-image: linear-gradient(315deg, #4834d4 0%, #0c0c0c 74%); */
     background-color: #2b4162;
     background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
-    /* background-color: #000000;
-    background-image: linear-gradient(147deg, #000000 0%, #434343 74%); */
     color: #ffffffac;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .card {
     position: relative;
     border-radius: 1rem;
     border: 2px solid transparent;
-    /* background: linear-gradient(#151515, #151515) padding-box,
-        linear-gradient(to top, #11998e, #38ef7d) border-box; */
     background: linear-gradient(#15151547, #15151568) padding-box,
         linear-gradient(to top, #11998e3e, #38ef7e5d) border-box;
-    /* background: linear-gradient(#15151544, #1515156a) padding-box,
-        linear-gradient(to top, #11998e, #38ef7d) border-box; */
     padding: 1rem;
     backdrop-filter: blur(2rem);
     max-width: 400px;
@@ -53,18 +46,6 @@ main {
 .card:hover::before {
     left: 100%;
 }
-
-/* .card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 1rem;
-    border: 2px solid transparent;
-    background: linear-gradient(#15151556, #15151585) padding-box,
-        linear-gradient(to top, #11998e, #38ef7d) border-box;
-    filter: blur(2rem);
-    z-index: -1;
-} */
 
 .card h1 {
     text-align: center;
@@ -93,7 +74,6 @@ main {
 }
 
 .title {
-    /* border: 1px solid #12100e; */
     border: 1px solid transparent;
     background: linear-gradient(#151515, #151515) padding-box,
         linear-gradient(to top, #11998e, #38ef7d) border-box;
@@ -107,7 +87,7 @@ main {
     transition: all .3s ease-in-out;
 }
 .card-info a:hover {
-    color: #4834d4;
+    color: #11998e;
 }
 
 @media (min-width: 768px) {
