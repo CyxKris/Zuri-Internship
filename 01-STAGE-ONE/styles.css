@@ -26,7 +26,7 @@ main {
         linear-gradient(to top, #11998e3e, #38ef7e5d) border-box;
     padding: 1rem;
     backdrop-filter: blur(2rem);
-    max-width: 400px;
+    width: 400px;
     overflow-x: hidden;
     transition: all .3s ease-in-out;
     z-index: 1;
@@ -61,7 +61,7 @@ main {
 }
 
 .card-info {
-    padding: 1rem;
+    padding-block: 1rem;
     display: grid;
     gap: .75rem;
 }
@@ -92,17 +92,19 @@ main {
 
 @media (min-width: 768px) {
     .card {
-        max-width: 600px;
+        width: 700px;
+    }
+    .card-content {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        gap: 1rem;
+    }
+    .card-content img {
+        width: 30%;
+    }
+    .card-content section.card-info {
+        width: 70%;
     }
     .card img {
         width: 70%;
-    }
-    .card-info {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        margin-top: 2rem;
     }
 }

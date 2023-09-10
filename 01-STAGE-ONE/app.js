@@ -5,14 +5,12 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 
 const getUTCTime = () => {
     const today = new Date();
-    const day = today.getDay();
-    const weekday = days[day];
+    const weekday = days[today.getUTCDay()];
 
-    utcTime = today.getTime();
+    let utcTime = Date.now();
 
     timeElement.innerHTML = utcTime;
     dayElement.innerHTML = weekday;
-    return utcTime;
 }
 
 const updateUTCTime = setInterval(getUTCTime, 1000);
