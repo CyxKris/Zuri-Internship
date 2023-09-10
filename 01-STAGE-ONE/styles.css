@@ -73,15 +73,6 @@ main {
     font-size: 1.1rem;
 }
 
-.title {
-    border: 1px solid transparent;
-    background: linear-gradient(#151515, #151515) padding-box,
-        linear-gradient(to top, #11998e, #38ef7d) border-box;
-    padding: .25rem;
-    border-radius: .25rem;
-    cursor: default;
-}
-
 .card-info a {
     color: inherit;
     transition: all .3s ease-in-out;
