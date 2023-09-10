@@ -3,14 +3,16 @@ const timeElement = document.querySelector('[data-testid="currentUTCTime"]');
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-const getUTCTime = () => {
-    const today = new Date();
-    const weekday = days[today.getUTCDay()];
-
-    let utcTime = Date.now();
-
-    timeElement.innerHTML = utcTime;
+const getDay = () => {
+    const dayIndex = new Date().getUTCDay();
+    const weekday = days[dayIndex];
     dayElement.innerHTML = weekday;
 }
+getDay();
 
-const updateUTCTime = setInterval(getUTCTime, 1000);
+const getUTCTime = () => {
+    let utcTime = new Date().getTime();
+    timeElement.innerHTML = utcTime;
+}
+
+setInterval(getUTCTime, 1000);
