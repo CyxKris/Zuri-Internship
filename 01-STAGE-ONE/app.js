@@ -5,17 +5,10 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 
 const getUTCTime = () => {
     const today = new Date();
-    
-    const year = today.getFullYear();
-    const month = today.getMonth();
     const day = today.getDay();
-    const hour = today.getHours();
-    const minute = today.getMinutes();
-    const second = today.getSeconds();
-
     const weekday = days[day];
 
-    let utcTime = Date.UTC(year, month, day, hour, minute, second);
+    utcTime = today.getTime();
 
     timeElement.innerHTML = utcTime;
     dayElement.innerHTML = weekday;
