@@ -1,1 +1,1 @@
-# The second project of the Zuri Internship program
+# The second stage of the Zuri Internship program
